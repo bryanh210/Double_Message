@@ -79,7 +79,7 @@ passport.use(new FacebookStrategy({
       pictureURL: profile.photos[0].value,
       friends: profile._json.friends.data
     }, function (err, user) {
-      return cb(err, user);
+      // return cb(err, user);
     });
   }
 ));
@@ -97,7 +97,7 @@ passport.use(new TwitterStrategy({
       twitterToken: token,
       twitterTokenSecret: tokenSecret
     }, function (err, user) {
-      return cb(err, user);
+      // return cb(err, user);
     });
   }
 ));
